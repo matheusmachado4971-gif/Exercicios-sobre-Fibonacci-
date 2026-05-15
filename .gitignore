@@ -1,0 +1,18 @@
+# Compilados e Executáveis
+*.exe
+*.o
+*.out
+
+# Arquivos temporários do VS Code (Code Runner)
+tempCodeRunnerFile.cpp
+tempCodeRunnerFile.exe
+
+# Configurações locais do VS Code
+.vscode/
+settings.json
+tasks.json
+
+# Arquivos de log e sistema
+*.log
+Thumbs.db
+.DS_Store
