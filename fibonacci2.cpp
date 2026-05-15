@@ -39,3 +39,25 @@ int main()
 
     return 0;
 }
+/**************************
+ * ATIVIDADE 2: Sequência de Fibonacci com Memorização
+ * 
+ * Descrição:
+ * Implementação otimizada da sequência de Fibonacci utilizando recursividade
+ * e a técnica de memoização para evitar o recalculo de subproblemas.
+ * 
+ * Funcionamento:
+ * 1. O programa utiliza um vetor 'cache' (alocado dinamicamente via malloc/new)
+ *    para armazenar resultados de chamadas anteriores.
+ * 2. Antes de calcular, verifica-se se o valor já existe no cache.
+ * 3. Se existir, o retorno é imediato; caso contrário, realiza-se o cálculo
+ *    recursivo e armazena-se o resultado no cache.
+ * 
+ * Complexidade:
+ * - Reduz drasticamente a quantidade de chamadas recursivas comparado à
+ *   versão ingênua, tornando a execução linear em relação a 'n'.
+ * 
+ * Regras Matemáticas:
+ * - Casos base: fib(0) = 0, fib(1) = 1
+ * - Recursão: fib(n) = fib(n-1) + fib(n-2)
+ ***************************/

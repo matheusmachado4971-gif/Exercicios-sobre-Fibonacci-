@@ -32,14 +32,25 @@ int main()
 }
 
 
-//# Explica��o da Atividade 3 � Torres de Hanoi
-
-//A solu��o utiliza recursividade para resolver o problema das Torres de Hanoi.
-
-//O objetivo do programa � mover todos os discos da torre de origem para a torre de destino sem colocar discos maiores sobre discos menores.
-
-//O caso base ocorre quando existe apenas um disco, sendo poss�vel mov�-lo diretamente para a torre de destino.
-
-//A cada chamada recursiva, o problema � reduzido para mover n-1 discos entre as torres auxiliar e destino.
-
-//O programa tamb�m exibe todos os movimentos realizados e contabiliza o n�mero total de movimentos gerados pela solu��o recursiva.
+/**************************
+ * ATIVIDADE 3: Torres de Hanoi (Recursividade)
+ * 
+ * Descrição:
+ * Implementação da solução clássica para o problema das Torres de Hanoi,
+ * utilizando o paradigma de divisão e conquista através da recursão.
+ * 
+ * Regras do Jogo:
+ * 1. Mover todos os discos da Origem para o Destino.
+ * 2. Apenas um disco pode ser movido por vez.
+ * 3. Um disco maior nunca pode ser colocado sobre um disco menor.
+ * 
+ * Lógica da Solução:
+ * - Caso Base: Se houver apenas 1 disco, move-se diretamente da origem para o destino.
+ * - Passo Recursivo:
+ *    1. Move-se (n-1) discos da origem para a torre auxiliar.
+ *    2. Move-se o disco maior (o último) para a torre de destino.
+ *    3. Move-se os (n-1) discos da auxiliar para o destino.
+ * 
+ * Complexidade:
+ * - O número total de movimentos é dado por 2^n - 1.
+ ***************************/
