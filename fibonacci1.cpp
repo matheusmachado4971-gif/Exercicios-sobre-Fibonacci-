@@ -34,9 +34,17 @@ int main()
     return 0;
 }
 
-# Explica��o da Atividade 1 � Fibonacci Recursivo sem Otimiza��o
-
-Nesta atividade foi implementada a sequ�ncia de Fibonacci utilizando recursividade simples, sem qualquer tipo de otimiza��o.
-
-A sequ�ncia de Fibonacci segue a regra:
-
+/*
+ * ATIVIDADE 1: FIBONACCI RECURSIVO (SEM OTIMIZAÇÃO)
+ * * Descrição: Implementação da sequência de Fibonacci utilizando recursividade simples.
+ * * Regras:
+ * fib(0) = 0
+ * fib(1) = 1
+ * fib(n) = fib(n-1) + fib(n-2)
+ * * Casos Base: Se n == 0 ou n == 1, retorna n.
+ * * Complexidade e Desempenho:
+ * - A função se divide em fib(n-1) e fib(n-2) a cada chamada.
+ * - Não utiliza memoização, resultando em cálculos repetidos.
+ * - Exemplo: No cálculo de fib(5), o termo fib(3) é recalculado múltiplas vezes.
+ * * Observação: Inclui um contador global/ponteiro para rastrear o número total de chamadas.
+ */
