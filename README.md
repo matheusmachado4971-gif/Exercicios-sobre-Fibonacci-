@@ -1,7 +1,7 @@
 Exercícios de Recursividade - Fibonacci e Torres de Hanoi
 
 Este projeto foi desenvolvido como parte das atividades da disciplina de Estrutura de Dados (Engenharia de Software - UniCesumar).
-O objetivo é aplicar conceitos de recursividade, alocação dinâmica e otimização de algoritmos (memoização).
+O objetivo é aplicar conceitos de recursividade, alocação dinâmica e otimização de algoritmos.
 
 O projeto está dividido em três arquivos principais:
 
@@ -10,7 +10,7 @@ O projeto está dividido em três arquivos principais:
      Objetivo: Demonstrar o custo computacional de uma recursão sem otimização.
 
 2.  `fibonacci2.cpp` (Recursividade com Memoização):
-    Implementação otimizada utilizando Memoização e Alocação Dinâmica (`malloc`).
+    Implementação otimizada utilizando Memoização e Alocação Dinâmica.
     O algoritmo salva resultados já calculados em um vetor para evitar repetições.
     Objetivo: Mostrar a diferença drástica na performance e no número de chamadas em relação à versão simples.
 
@@ -24,9 +24,3 @@ Conceitos Utilizados
 - Recursividade
 - Alocação Dinâmica de Memória
 - Análise de Complexidade de Algoritmos
-
-Como Executar: 
-Para rodar qualquer um dos arquivos, você pode usar um compilador C++.
-```bash
-g++ nome_do_arquivo.cpp -o programa
-./programa
