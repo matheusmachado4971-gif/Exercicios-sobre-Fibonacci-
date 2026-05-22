@@ -106,3 +106,80 @@ void inserirPosicao(No **head, int valor, int posicao) {
 
     temp->prox = novo;
 }
+
+/* =====================================================
+   PARTE 2 - BUSCA POR VALOR
+===================================================== */
+
+int buscarValor(No *head, int valor) {
+
+    int posicao = 0;
+
+    while (head != NULL) {
+
+        if (head->valor == valor) {
+            return posicao;
+        }
+
+        head = head->prox;
+
+        posicao++;
+    }
+
+    return -1;
+}
+
+/* =====================================================
+   PARTE 3 - INVERTER LISTA
+===================================================== */
+
+void inverterLista(No **head) {
+
+    No *anterior = NULL;
+    No *atual = *head;
+    No *proximo = NULL;
+
+    while (atual != NULL) {
+
+        proximo = atual->prox;
+
+        atual->prox = anterior;
+
+        anterior = atual;
+
+        atual = proximo;
+    }
+
+    *head = anterior;
+}
+
+/* =====================================================
+   PARTE 4 - DIVIDIR LISTA EM DUAS
+===================================================== */
+
+void dividirLista(No *head, No **lista1, No **lista2) {
+
+    if (head == NULL) {
+
+        *lista1 = NULL;
+        *lista2 = NULL;
+
+        return;
+    }
+
+    No *lento = head;
+    No *rapido = head->prox;
+
+    while (rapido != NULL && rapido->prox != NULL) {
+
+        lento = lento->prox;
+
+        rapido = rapido->prox->prox;
+    }
+
+    *lista1 = head;
+
+    *lista2 = lento->prox;
+
+    lento->prox = NULL;
+}
